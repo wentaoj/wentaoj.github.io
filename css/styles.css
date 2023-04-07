@@ -68,13 +68,13 @@ div {
     max-width: 100%; 
 }
 
+/* ensure that the image does not overflow its container */
 @media (max-width: 800px) {
     .container figure {
         float: none;
         margin: 0 auto;
         display: block;
         max-width: 100%;
-        /* ensure that the image does not overflow its container */
     }
 }
 
