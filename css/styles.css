@@ -13,6 +13,7 @@ body {
     background-color: white;
     border: 3px solid aliceblue;
     border-radius: 18px;
+    text-align: left;
 }
 
 h1 {
@@ -34,15 +35,47 @@ div {
 }
 
 .container ul li {
+    margin-top: 8px;
     margin-bottom: 10px;
 }
 
-.container ul li:last-child {
+.container .dm-list li {
+    width: calc(67% - 20px); 
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .container .dm-list li {
+      width: calc(90%);
+    }
+}
+
+.container .dm-list li:last-child {
     border-bottom: 1px none white;
 }
 
-.container ul li:nth-child(odd) {
+.container .dm-list li:nth-child(odd) {
     background-color: aliceblue;
+}
+
+.container .fig-container {
+    text-align: center;
+}
+
+.container figure {
+    float: right;
+    margin: 1em;
+    max-width: 100%; 
+}
+
+@media (max-width: 800px) {
+    .container figure {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        /* ensure that the image does not overflow its container */
+    }
 }
 
 a {
